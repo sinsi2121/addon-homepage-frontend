@@ -1,3 +1,14 @@
-git add postcss.config.cjs
-git commit -m "fix: use tailwindcss/postcss as PostCSS plugin"
-git push
+// postcss.config.cjs
+module.exports = {
+plugins: {
+tailwindcss: {},
+autoprefixer: {},
+},
+};
+
+Tailwind CSSやAutoprefixerを使わない場合は、こちら：
+
+// postcss.config.cjs
+module.exports = {
+plugins: [],
+};
